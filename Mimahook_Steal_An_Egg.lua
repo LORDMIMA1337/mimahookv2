@@ -32,12 +32,7 @@ do
 					if type(response) == "string" and #response > 0 then
 						return response
 					end
-					local genvLocal = typeof(getgenv) == "function" and getgenv() or _G
-					if type(readfile) == "function" and type(isfile) == "function" and isfile("Mimahook_Library.lua") then
-						response = readfile("Mimahook_Library.lua")
-					else
-						response = game:HttpGet("https://raw.githubusercontent.com/LORDMIMA1337/mimahook/refs/heads/main/Mimahook_Library.lua")
-					end
+					response = game:HttpGet("https://raw.githubusercontent.com/LORDMIMA1337/mimahookv2/refs/heads/main/Mimahook_Library.lua")
 					return response
 				end
 
@@ -27667,7 +27662,7 @@ if enabled then
     end)
     task.wait(1.5)
     local ok, source = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/LORDMIMA1337/mimahook/refs/heads/main/Mimahook_Steal_An_Egg.lua")
+        return game:HttpGet("https://raw.githubusercontent.com/LORDMIMA1337/mimahookv2/refs/heads/main/Mimahook_Steal_An_Egg.lua")
     end)
     if ok and type(source) == "string" then
         local chunk = loadstring(source)
