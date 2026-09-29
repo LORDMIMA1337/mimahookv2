@@ -12416,6 +12416,7 @@ end
 
 
 -- ===================== Modern theme pass =====================
+pcall(function()
 local MimaTheme = {
     Surface = Color3.fromRGB(21, 24, 33),
     Elevated = Color3.fromRGB(30, 34, 46),
@@ -12562,7 +12563,8 @@ local function mimaWatch(root)
         end)
     end))
 end
-pcall(mimaWatch, rootGui)
+mimaWatch(rootGui)
+end)
 -- =================== end modern theme pass ===================
 
 (function()
