@@ -12567,7 +12567,7 @@ mimaWatch(rootGui)
 end)
 -- =================== end modern theme pass ===================
 
-(function()
+;(function()
 local U0 = "https://raw.githubusercontent.com/tienkhanh1/spicy/refs/heads/main/ChilliLibraryEngine"
 local B0 = {
     [1] = 0x43534833,
